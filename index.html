@@ -5,7 +5,6 @@
         
         <link href="DrippingCool.ttf" rel="stylesheet" type="text/css">
         <link href="stylesheet.css" rel="stylesheet">
-        <script src="script.js"></script>
     </head>
     
     <body class="flexbox-column-container">
@@ -14,30 +13,32 @@
             <h1>O INCRÍVEL<br><em>MONSTRO VERDE</em><br>QUE COME PEDRAS<br>E MORA EMBAIXO DA TERRA</h1>
         </div>
         
-        <form name="monster_form" class="flexbox-column-container textalign-center">
+        <form name="monster_form" class="flexbox-column-container textalign-center"
+              action="http://terrivel.herokuapp.com/monster/" 
+              method="post">
             <label for="nome">
                 nome do monstro<br>
-                <input name="nome" id="nome" type="text">
+                <input name="nome" id="nome" type="text" required>
             </label><br>
             
             <label for="num_pedras">
                 número de pedras<br>
-                <input name="num_pedras" id="num_pedras" type="number" step="1" min="0">
+                <input name="num_pedras" id="num_pedras" type="number" step="1" min="0" required>
             </label><br>
             
             <label for="tam_pedras">
                 tamanho das pedras<br>
-                <input name="tam_pedras" id="tam_pedras" type="range" min="0" max="7" step="0.5">
+                <input name="tam_pedras" id="tam_pedras" type="range" min="0" max="7" step="0.5" required>
             </label><br>
             
             <label for="corCeu1">
                 cór do céu 1
-                <input name="corCeu1" id="corCeu1" type="color">
+                <input name="corCeu1" id="corCeu1" type="color" required>
             </label><br>
             
             <label for="corCeu1">
                 cór do céu 2
-                <input name="corCeu2" id="corCeu2" type="color">
+                <input name="corCeu2" id="corCeu2" type="color" required>
             </label><br>
             
             <label for="tipo_pedras">
@@ -52,14 +53,15 @@
             
             <label for="tipo_pedras_sortidas">
                 pedras sortidas?<br>
-                <input name="tipo_pedras_sortidas" id="tipo_pedras_sortidas" type="radio" value="não">não
+                <input name="tipo_pedras_sortidas" type="radio" value="não" checked>não
                 <input name="tipo_pedras_sortidas" id="tipo_pedras_sortidas" type="radio" value="sim">sim
             </label>
             
-            <button type="submit" method="post" action="http://terrivel.herokuapp.com/monster/enviar.php">
+            <button type="submit">
                 alimentar<br>monstro
             </button>
         </form>
         
+        <script src="script.js"></script>
     </body>
 </html>
