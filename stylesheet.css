@@ -1,86 +1,124 @@
-/* Fonts */
-@import url(https://fonts.googleapis.com/css?family=Lato:100&subset=latin,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=League+Script);
-@import url(https://fonts.googleapis.com/css?family=Londrina+Outline);
-
-/* Custom classes */
 .container {
-    width: auto;
+  width: auto;
 }
 
 .flexbox-column-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .textalign-center {
-    text-align: center;
+  text-align: center;
 }
 
 /* IDs */
+
 #corCeu1, #corCeu2 {
-    background-color: #FFF;
-    border-radius: 100%;
-    height: 20px;
-    width: 20px;
+  background-color: #FFF;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
 }
 
 #corCeu1, #corCeu2, #tipo_pedras_sortidas {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 /* Tags */
+
 body {
-    background-color: #1D1F21;
-    color: #FFF;
+  background-color: #1D1F21;
+  color: #FFF;
 }
 
 button {
-    color: greenyellow;
-    cursor: pointer;
-    background-color: #1D1F21;
-    border-style: none;
-    font-family: 'League Script', cursive;
-    font-size: 2em;
-    margin-top: 20px;
+  color: greenyellow;
+  cursor: pointer;
+  background-color: #1D1F21;
+  border-style: none;
+  font-family: 'League Script', cursive;
+  font-size: 1.5em;
+  padding: 0.25em 0.5em;
+  margin-top: 20px;
+  border: 1px solid #2d2d2c;
+  border-radius: 0.25em;
+  transition: all 200ms ease;
+}
+
+button:hover {
+  background-color: #ffffff05;
 }
 
 em {
-    color: greenyellow;
-    font-size: 1.5em;
-    font-style: normal;
-    line-height: 1.1em;
+  color: greenyellow;
+  font-size: 1.5em;
+  font-style: normal;
+  line-height: 1.1em;
 }
 
 form {
-    padding: 15px;
-    border: solid greenyellow 1px;
-    border-radius: 20px;
-    margin: 10px;
+  padding: 15px;
+  border: solid greenyellow 1px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 h1 {
-    font-family: 'Londrina Outline', cursive;
-    font-weight: 100;
-    line-height: 1em;
-    
-    margin: 0 0 10px 0;
+  font-family: 'Londrina Outline', cursive;
+  font-weight: 100;
+  line-height: 1em;
+  margin: 0 0 10px 0;
 }
 
 h3 {
-    font-family: 'League Script', cursive;
-    font-size: 1.5em;
-    font-weight: 100;
-    margin: 10px 0;
-    
+  font-family: 'League Script', cursive;
+  font-size: 1.5em;
+  font-weight: 100;
+  margin: 10px 0;
 }
 
 input {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 label {
-    font-family: 'Lato', sans-serif;
-    font-weight: 100;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+code {
+  transform: translateX(-49%) translateY(150%);
+  display: inline-block;
+  position: absolute;
+  font-size: 0.5em;
+  background-color: black;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75em;
+}
+
+.signature {
+  font-family: 'League Script', cursive;
+  color: #fff;
+}
+
+.signature a:link {
+  color: greenyellow;
+  text-decoration: none;
+}
+
+.signature a:hover {
+  text-decoration: underline;
+}
+
+.signature a:active {
+  color: darkred;
+}
+
+.signature a:visited {
+  color: #ddd;
 }

@@ -1,67 +1,75 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        
-        <link href="DrippingCool.ttf" rel="stylesheet" type="text/css">
-        <link href="stylesheet.css" rel="stylesheet">
-    </head>
-    
-    <body class="flexbox-column-container">
-        <div class="textalign-center">
-            <h3>dando pedras para</h3>
-            <h1>O INCRÍVEL<br><em>MONSTRO VERDE</em><br>QUE COME PEDRAS<br>E MORA EMBAIXO DA TERRA</h1>
-        </div>
-        
-        <form name="monster_form" class="flexbox-column-container textalign-center"
-              action="http://terrivel.herokuapp.com/monster/" 
-              method="post">
-            <label for="nome">
-                nome do monstro<br>
-                <input name="nome" id="nome" type="text" required>
-            </label><br>
-            
-            <label for="num_pedras">
-                número de pedras<br>
-                <input name="num_pedras" id="num_pedras" type="number" step="1" min="0" required>
-            </label><br>
-            
-            <label for="tam_pedras">
-                tamanho das pedras<br>
-                <input name="tam_pedras" id="tam_pedras" type="range" min="0" max="7" step="0.5" required>
-            </label><br>
-            
-            <label for="corCeu1">
-                cór do céu 1
-                <input name="corCeu1" id="corCeu1" type="color" required>
-            </label><br>
-            
-            <label for="corCeu1">
-                cór do céu 2
-                <input name="corCeu2" id="corCeu2" type="color" required>
-            </label><br>
-            
-            <label for="tipo_pedras">
-                tipo de pedras<br>
-                <select name="tipo_pedras" id="tipo_pedras">
-                    <option value="marroada">Marroada</option>
-                    <option value="ametista">Ametista</option>
-                    <option value="topazio">Topazio</option>
-                    <option value="espinela">Espinela</option>
-                </select>
-            </label><br>
-            
-            <label for="tipo_pedras_sortidas">
-                pedras sortidas?<br>
-                <input name="tipo_pedras_sortidas" type="radio" value="não" checked>não
-                <input name="tipo_pedras_sortidas" id="tipo_pedras_sortidas" type="radio" value="sim">sim
-            </label>
-            
-            <button type="submit">
-                alimentar<br>monstro
-            </button>
-        </form>
-        
-        <script src="script.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Grota do Monstro</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=League+Script&family=Londrina+Outline&display=swap" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+</head>
+<body class="flexbox-column-container">
+  <div class="textalign-center">
+    <h3>dando pedras para</h3>
+    <h1>O INCRÍVEL<br><em>MONSTRO VERDE</em><br>QUE COME PEDRAS<br>E MORA EMBAIXO DA TERRA</h1>
+  </div>
+
+  <form name="monster_form" class="flexbox-column-container textalign-center"
+    action="http://terrivel.herokuapp.com/monster/" method="post">
+    <label for="nome">
+      nome do monstro<br>
+      <input name="nome" id="nome" type="text" required>
+    </label><br>
+
+    <label for="num_pedras">
+      número de pedras<br>
+      <input name="num_pedras" id="num_pedras" type="number" step="1" min="0" required>
+    </label><br>
+
+    <label for="tam_pedras">
+      tamanho das pedras<br>
+      <input name="tam_pedras" id="tam_pedras" type="range" min="0" max="7" step="0.5" required>
+    </label><br>
+
+    <label for="corCeu1">
+      cor do céu 1
+      <input name="corCeu1" id="corCeu1" type="color" required>
+    </label><br>
+
+    <label for="corCeu1">
+      cor do céu 2
+      <input name="corCeu2" id="corCeu2" type="color" required>
+    </label><br>
+
+    <label for="tipo_pedras">
+      tipo de pedras<br>
+      <select name="tipo_pedras" id="tipo_pedras">
+        <option value="marroada">Marroada</option>
+        <option value="ametista">Ametista</option>
+        <option value="topazio">Topazio</option>
+        <option value="espinela">Espinela</option>
+      </select>
+    </label><br>
+
+    <label for="tipo_pedras_sortidas">
+      pedras sortidas?<br>
+      <input name="tipo_pedras_sortidas" type="radio" value="não" checked>não
+      <input name="tipo_pedras_sortidas" id="tipo_pedras_sortidas" type="radio" value="sim">sim
+    </label>
+
+    <div class="buttons">
+      <button type="submit" formmethod="GET">
+        alimentar<br>monstro <code>(GET)</code>
+      </button>
+      <button type="submit" formmethod="POST">
+        alimentar<br>monstro <code>(POST)</code>
+      </button>
+    </div>
+  </form>
+
+  <p class="signature">Design by <a href="https://github.com/pedrofelipefroes">@pedrofelipefroes</a></p>
+
+  <script src="script.js"></script>
+</body>
 </html>
