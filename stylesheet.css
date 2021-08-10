@@ -38,8 +38,7 @@ button {
   background-color: #1D1F21;
   border-style: none;
   font-family: 'League Script', cursive;
-  font-size: 1.5em;
-  padding: 0.25em 0.5em;
+  font-size: 1.25em;
   margin-top: 20px;
   border: 1px solid #2d2d2c;
   border-radius: 0.25em;
@@ -88,7 +87,7 @@ label {
 }
 
 code {
-  transform: translateX(-49%) translateY(150%);
+  transform: translateX(-50%) translateY(200%);
   display: inline-block;
   position: absolute;
   font-size: 0.5em;
@@ -98,7 +97,7 @@ code {
 .buttons {
   display: flex;
   justify-content: space-between;
-  gap: 0.75em;
+  gap: 0.25em;
 }
 
 .signature {
